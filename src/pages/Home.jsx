@@ -9,8 +9,7 @@ export function Home() {
 
   // Validate the phone number
   const validatePhoneNumber = (phone) => {
-    const cleanedPhone = phone.replace(/\D/g, '');
-    if (cleanedPhone.length !== 10) {
+    if (phone.length !== 10) {
       return { isValid: false, message: 'Please enter a valid 10-digit phone number' };
     }
     return { isValid: true }; 
@@ -35,10 +34,10 @@ export function Home() {
     <div>
       <div className="navbar">
         <div className="navbar-left">
-          <Link to="/home">Spark! BookPals!</Link>
+          <Link to="/">Spark! BookPals!</Link>
         </div>
         <div className="navbar-right">
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         </div>
       </div>
