@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CallToAction } from '../components/CallToAction'; 
+import { Link } from 'react-router-dom'; 
 
 export function Home() {
   const [phoneNumbers, setPhoneNumbers] = useState([]);
@@ -34,11 +35,11 @@ export function Home() {
     <div>
       <div className="navbar">
         <div className="navbar-left">
-          <a href="http://localhost:5500/index.html">Spark! BookPals!</a>
+          <Link to="/home">Spark! BookPals!</Link>
         </div>
         <div className="navbar-right">
-          <a href="http://localhost:5500/index.html">Home</a>
-          <a href="http://localhost:5500/about.html">About</a>
+        <Link to="/home">Home</Link>
+        <Link to="/about">About</Link>
         </div>
       </div>
       <div className="content">
