@@ -89,19 +89,25 @@ a {
 /* Button Link */
 .btn-link {
     display: inline-flex; 
-    height: auto; /* Allow height to be auto */
-    padding: 0.5em 1em; /* Padding for button */
+    height: 30px; /* Adjust the height as needed */
+    width: 200px; /* Set a minimum width for a rectangular shape */
     align-items: center; 
     justify-content: center; 
-    background-color: #ff0000; 
+    padding-right: 1em; 
+    background-color: #030303; 
     color: white; 
     border: none; 
     white-space: nowrap; 
-    border-radius: 4px; /* Optional rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Transition for button */
-    height: 80px;
-    width: 80px;
+    border-radius: 5px; /* Optional: Add some border radius for rounded corners */
 }
+
+/* Ensure the image retains its size */
+.btn-logo {
+    width: 30px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 8px; /* Add some space between the image and text */
+}
+
 
 
 

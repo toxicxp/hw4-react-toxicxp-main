@@ -33,7 +33,8 @@ export function Home() {
   return (
     <div>
       <div className="content">
-        <p>Spark! Bytes is a revolutionary platform for Boston University's community...</p>
+        <p>Spark! Bookpals is a revolutionary platform for Boston University's community. Bu students and affilicates can connect through foor and engage in in-depth discussions, and more! Our unique features allow users to filter books based on genres and complexity. among other things. Stay up-to-date through SMS and Whatsapp notifications whenever a book you be interested in is discussed!
+        </p>
         <h2>Sign up</h2>
         <h5>Signup for Notifications</h5>
         <form id="signup-form" onSubmit={handleSubmit}>
