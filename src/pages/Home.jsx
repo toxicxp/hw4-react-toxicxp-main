@@ -32,15 +32,6 @@ export function Home() {
 
   return (
     <div>
-      <div className="navbar">
-        <div className="navbar-left">
-          <Link to="/">Spark! BookPals!</Link>
-        </div>
-        <div className="navbar-right">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        </div>
-      </div>
       <div className="content">
         <p>Spark! Bytes is a revolutionary platform for Boston University's community...</p>
         <h2>Sign up</h2>
@@ -51,6 +42,7 @@ export function Home() {
               type="text"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
+              placeholder="Enter your phone number"
             />
             <button type="submit">Sign Up</button>
           </div>
@@ -63,10 +55,7 @@ export function Home() {
           ))}
         </ul>
       </div>
-      <CallToAction />
-      <div className="footer">
-        <p>&copy; 2023 Spark! BookPals. All Rights Reserved.</p>
-      </div>
+      <CallToAction /> {/* CallToAction component will remain here */}
     </div>
   );
 }

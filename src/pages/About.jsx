@@ -3,15 +3,6 @@ import "../index.css";
 export function About() {
   return (
     <div>
-      <div class="navbar">
-        <div class="navbar-left">
-          <a href="http://localhost:5500/index.html">Spark! BookPals!</a>
-        </div>
-        <div class="navbar-right">
-          <a href="http://localhost:5500/index.html">Home</a>
-          <a href="http://localhost:5500/about.html">About</a>
-        </div>
-      </div>
       <div class="content">
         <h>Welcome to Spark! BookPals!</h>
         <p>Hello! My name is Ray Chu I was born in Boston, Massachusetts and have lived here all my life so far so I know the area really well and can recommend some underrated or undiscovered spots. Just name an experience!</p>
@@ -27,9 +18,7 @@ export function About() {
 
       <div class="author-info"></div>
 
-      <div class="footer">
-        <p>&copy; 2023 Spark! BookPals. All Rights Reserved.</p>
-      </div>
+      
     </div>
 
   );

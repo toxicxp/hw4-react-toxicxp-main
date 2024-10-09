@@ -3,15 +3,30 @@ import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./pages/Home.jsx";
 import { About } from "./pages/About.jsx";
+import { Navbar } from "./components/Navbar.jsx";
+import { Footer } from "./components/Footer.jsx";
+import { CallToAction } from "./components/CallToAction.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <>
+        <Navbar />
+        <Home />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/about",
-    element: <About />,
+    element: (
+      <>
+        <Navbar />
+        <About />
+        <Footer />
+      </>
+    ),
   },
 ]);
 
